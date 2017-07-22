@@ -5,7 +5,8 @@ Willing to Volunteer: Yes
 
 Files
 =====
-* run
+* run-shell
+* run-downloader
 * shell.cpp
 * serial.cpp
 * parallel.cpp
