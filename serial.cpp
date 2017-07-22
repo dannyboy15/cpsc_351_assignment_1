@@ -84,6 +84,7 @@ void readUrls(vector<string>& urls, string file) {
 int main() {
 	// File with URLs to download
 	string urlsFile = "urls.txt";
+	// string urlsFile = "urls-10.txt";
 
 	// For macOS
 	string cmdPath = "/usr/local/bin/wget";

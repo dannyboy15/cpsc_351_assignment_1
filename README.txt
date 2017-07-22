@@ -14,7 +14,20 @@ Files
 
 Installation and Usage
 ======================
-1. Run the "run" bash file (`bash run`)
+
+Shell Program
+-------------
+1. Run the "run-shell" bash script (`bash run-shell`)
+
+Downloaders Programs
+--------------------
+1. Change the program variables for the wget path and url file name.
+    a. Open the cpp files and make sure the `cmdPath` variable matches the path of your wget command.
+        i. To get the path to your wget command, open your CLI and type in `which wget`.
+        ii. Copy the path and paste it in the cpp file.
+    b. Open the cpp files and set `urlsFile` to path of urls file.
+        i. Inlcuded is 4 standard files (urls.txt) or 10 large files (urls-10.txt)
+2. Run the "run-downloaders" bash script (`bash run-downloaders`)
 
 Execution Times
 ===============
