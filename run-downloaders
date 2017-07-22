@@ -7,12 +7,14 @@ clear
 if [ -f serial.out ]; then
     rm serial.out
 fi
-g++ main.cpp && time ./serial.out
+echo "Serial Downloader"
+g++ main.cpp -o serial.out && time ./serial.out
 rm serial.out
 
 # Run the parallel downloader
 if [ -f parallel.out ]; then
     rm parallel.out
 fi
-g++ main.cpp && time ./parallel.out
+echo "Parallel Downloader"
+g++ main.cpp -o parallel.out && time ./parallel.out
 rm parallel.out

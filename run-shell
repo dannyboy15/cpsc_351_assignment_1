@@ -1,0 +1,11 @@
+#! bash
+
+# Clear the terminal to make room for time output
+clear
+
+# Run the shell program
+if [ -f shell.out ]; then
+    rm shell.out
+fi
+g++ shell.cpp -o shell.out && ./shell.out
+rm shell.out
