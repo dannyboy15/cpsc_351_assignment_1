@@ -1,0 +1,18 @@
+#! bash
+
+# Clear the terminal to make room for time output
+clear
+
+# Run the serial downloader
+if [ -f serial.out ]; then
+    rm serial.out
+fi
+g++ main.cpp && time ./serial.out
+rm serial.out
+
+# Run the parallel downloader
+if [ -f parallel.out ]; then
+    rm parallel.out
+fi
+g++ main.cpp && time ./parallel.out
+rm parallel.out
