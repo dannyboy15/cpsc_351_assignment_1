@@ -8,7 +8,7 @@ if [ -f serial.out ]; then
     rm serial.out
 fi
 echo "Serial Downloader"
-g++ main.cpp -o serial.out && time ./serial.out
+g++ serial.cpp -o serial.out && time ./serial.out
 rm serial.out
 
 # Run the parallel downloader
@@ -16,5 +16,5 @@ if [ -f parallel.out ]; then
     rm parallel.out
 fi
 echo "Parallel Downloader"
-g++ main.cpp -o parallel.out && time ./parallel.out
+g++ parallel.cpp -o parallel.out && time ./parallel.out
 rm parallel.out
