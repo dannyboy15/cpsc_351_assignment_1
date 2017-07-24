@@ -39,7 +39,7 @@ void create_children(vector<string>& urls, string path) {
 			fclose(stderr);
 
 			/* Deploy wget */
-			if(execlp(path.c_str(), "wget", urlIt->c_str(), NULL) < 0) {
+			if(execlp(path.c_str(), "wget", urlIt->c_str(), "-P", "test_downloads/p", NULL) < 0) {
 				perror("execlp");
 				exit(1);
 			}
