@@ -1,0 +1,10 @@
+https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73751/world.topo.bathy.200407.3x21600x21600.A2.png
+https://eoimages.gsfc.nasa.gov/images/imagerecords/87000/87216/sirmilik_oli_2015215_geo.tif
+https://eoimages.gsfc.nasa.gov/images/imagerecords/88000/88867/chaba_tmo_2016278_geo.tif
+https://eoimages.gsfc.nasa.gov/images/imagerecords/7000/7493/indlala_amo_2007073_geo.tif
+https://eoimages.gsfc.nasa.gov/images/imagerecords/88000/88558/mozambique_oli_2014208_geo.tif
+https://eoimages.gsfc.nasa.gov/images/imagerecords/88000/88558/mozambique_oli_2016214_geo.tif
+https://eoimages.gsfc.nasa.gov/images/imagerecords/79000/79401/prapiroon_amo_2012289_geo.tif
+https://eoimages.gsfc.nasa.gov/images/imagerecords/79000/79184/grace_groundwater_storage_10fps.mov
+https://eoimages.gsfc.nasa.gov/images/imagerecords/40000/40962/thorthormi_ali_2009301_geo.tif
+https://eoimages.gsfc.nasa.gov/images/imagerecords/40000/40769/blacksea_amo_2009287_geo.tif
