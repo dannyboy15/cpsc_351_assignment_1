@@ -44,7 +44,7 @@ void create_children(vector<string>& urls, string path) {
 		else { /* parent process */
 			/* parent will wait for the child to complete */
 	        wait(NULL);
-	        printf("Child Complete\n");
+	        // printf("Downloaded: %s", urlIt->c_str());
 		}
 	}	
 }
@@ -101,7 +101,7 @@ int main() {
 	create_children(urls, cmdPath);
 	
 	// wait(NULL);
-	printf("Complete\n");
+	// printf("Complete\n");
 		
 	return 0;	
 	

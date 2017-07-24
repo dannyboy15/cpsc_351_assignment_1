@@ -106,7 +106,7 @@ int main() {
 	create_children(urls, cmdPath);
 	
 	// wait(NULL);
-	printf("Complete\n");
+	// printf("Complete\n");
 		
 	return 0;	
 	

@@ -43,7 +43,7 @@ int main()
 			else { /* parent process */
 			          /* parent will wait for the child to complete */
 			          wait(NULL);
-			          printf("Child Complete\n");
+			          // printf("Child Complete\n");
 			}
 				
 			/*** TODO: If I am child, I will do this: ****/
