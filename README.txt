@@ -25,13 +25,15 @@ Downloaders Programs
 1. Change the program variables for the wget path and url file name.
     a. Open the cpp files and make sure the `cmdPath` variable matches the path of your wget command.
         i. To get the path to your wget command, open your CLI and type in `which wget`.
-        ii. Copy the path and paste it in the cpp file.
+        ii. Copy the path and paste it in the cpp file for the `cmdPath` variable.
     b. Open the cpp files and set `urlsFile` to path of urls file.
         i. Inlcuded is 4 standard files (urls.txt) or 10 large files (urls-10.txt)
 2. Run the "run-downloaders" bash script (`bash run-downloaders`)
 
 Execution Times
 ===============
+urls.txt
+-------
 Serial Downloader
 
 real    50m28.821s
@@ -43,6 +45,20 @@ Parallel Downloader
 real    19m29.559s
 user    0m35.223s
 sys     3m24.066s
+
+urls-10.txt
+-----------
+Serial Downloader
+
+real    5m33.069s
+user    0m3.125s
+sys     0m12.666s
+
+Parallel Downloader
+
+real    1m10.315s
+user    0m2.213s
+sys     0m8.758s
 
 Questions
 =========
