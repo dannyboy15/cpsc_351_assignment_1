@@ -32,7 +32,17 @@ Downloaders Programs
 
 Execution Times
 ===============
+Serial Downloader
 
+real    50m28.821s
+user    0m50.761s
+sys     4m3.204s
+
+Parallel Downloader
+
+real    19m29.559s
+user    0m35.223s
+sys     3m24.066s
 
 Questions
 =========
@@ -42,10 +52,10 @@ Questions
     Sys time refers to the amount of CPU time when it is being used by the kernel. This includes tasks such as wrting to the hardrive or allocating memory.
 
 2. Which is longer: user time or sys time? Use your knowledge to explain why.
-    a. 
+    a. For both the serial and parallel downloader, the sys time was greater than the user time. This is a result of the the type of work that the program is doing. The user-mode task are small, simply starting other processes. The kernel, on the other hand is Is managing the multiple processes that the program created.
 
 3. When downloading the files above, which downloader finishes faster? Why? Please Explain.
-    a.
+    a. Of the two downloaders, the parallel downloader finished faster. This is because it was able to tabke advantage of its parallel structure to download the files at the same time. The serial downloader had to wait after one file was downloaded before starting the next one.
 
 4. Repeat the experiment for 10 files (any reasonably large-sized les, e.g., 100 MB, will do). Is the downloader in the previous question still faster? If not so, why? Please Explain.
     a.
