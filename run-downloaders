@@ -1,7 +1,11 @@
 #! bash
 
-# Clear the terminal to make room for time output
+# Clear the terminal
 clear
+
+# Make a folder for the download files
+mkdir test_downloads
+mkdir test_downloads/s test_downloads/p
 
 # Run the serial downloader
 if [ -f serial.out ]; then
@@ -11,7 +15,7 @@ echo "Serial Downloader"
 g++ serial.cpp -o serial.out && time ./serial.out
 rm serial.out
 
-# Add space between program calls
+# Add space
 echo
 
 # Run the parallel downloader
@@ -23,8 +27,9 @@ g++ parallel.cpp -o parallel.out && time ./parallel.out
 rm parallel.out
 
 # Ask user whether to delete files
-read -p "Would you like to delete the files? It will remove files that match this: CSUF* (y/n) " response
+echo
+read -p "Would you like to delete the files? It will delete the directory that was created, 'test_downloads' (y/n) " response
 
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
-    rm CSUF*
+    rm -rfv test_downloads
 fi
