@@ -1,4 +1,4 @@
-#! bash
+#! /bin/bash
 
 # Clear the terminal to make room for time output
 clear

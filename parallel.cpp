@@ -61,7 +61,7 @@ void create_children(vector<string>& urls, string path) {
  */
 void readUrls(vector<string>& urls, string file) {
 	/* Open the file */
-	ifstream urlFile(file);		
+	ifstream urlFile(file.c_str());		
 	
 	/* The URL buffer */
 	string urlBuffer;
@@ -94,8 +94,8 @@ int main() {
 	// For macOS
 	string cmdPath = "/usr/local/bin/wget";
 	// For Linux
-	// string cmdPath = "/usr/bin/wget"
-		
+	// string cmdPath = "/usr/bin/wget";
+
 	/* Read the URL files */
 	vector<string> urls;
 		
