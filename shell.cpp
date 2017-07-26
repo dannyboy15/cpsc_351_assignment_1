@@ -1,3 +1,12 @@
+/*
+Daniel Bravo <bravod@csu.fullerton.edu>,
+Colbert Chu <colbertchu@csu.fullerton.edu>
+Anthony Hernandez <herankoana@csu.fullerton.edu>
+Peter Vu <vupeter@csu.fullerton.edu>
+
+CPSC 351 - Summer 2017, Assignment 1
+*/
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/wait.h>
