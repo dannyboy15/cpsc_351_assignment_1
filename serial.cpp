@@ -1,10 +1,13 @@
-/*
-Daniel Bravo <bravod@csu.fullerton.edu>,
-Colbert Chu <colbertchu@csu.fullerton.edu>
-Anthony Hernandez <herankoana@csu.fullerton.edu>
-Peter Vu <vupeter@csu.fullerton.edu>
+/**
+    CPSC 351-Summer 2017 Assignment 1
+    serial.cpp
+    Purpose: Downloads files from specified urls using a serial architecture.
 
-CPSC 351 - Summer 2017, Assignment 1
+    @author Daniel Bravo <bravod@csu.fullerton.edu>
+	@author Colbert Chu <colbertchu@csu.fullerton.edu>
+	@author Anthony Hernandez <herankoana@csu.fullerton.edu>
+	@author Peter Vu <vupeter@csu.fullerton.edu>
+    @version 1.0 07/26/17 
 */
 
 #include <unistd.h>
@@ -19,7 +22,7 @@ using namespace std;
 /**
  * Forks children and lets them perform their tasks
  * @param urls - the URLs to download
- * @parama path - the path to the wget command
+ * @param path - the path to the wget command
  */
 void create_children(vector<string>& urls, string path) {	
 	
@@ -91,14 +94,13 @@ void readUrls(vector<string>& urls, string file) {
 }
 
 int main() {
-	// File with URLs to download
+	/* File with URLs to download */
 	string urlsFile = "urls.txt";
 	// string urlsFile = "urls-10.txt";
 
-	// For macOS
-	string cmdPath = "/usr/local/bin/wget";
-	// For Linux
-	// string cmdPath = "/usr/bin/wget";
+	/* Path to wget command */
+	string cmdPath = "/usr/local/bin/wget"; // For macOS
+	// string cmdPath = "/usr/bin/wget"; // For Linux
 
 	/* Read the URL files */
 	vector<string> urls;
@@ -109,9 +111,7 @@ int main() {
 	/* Create child processes */
 	create_children(urls, cmdPath);
 	
-	// wait(NULL);
 	// printf("Complete\n");
 		
 	return 0;	
-	
 }

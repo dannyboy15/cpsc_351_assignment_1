@@ -1,10 +1,14 @@
-/*
-Daniel Bravo <bravod@csu.fullerton.edu>,
-Colbert Chu <colbertchu@csu.fullerton.edu>
-Anthony Hernandez <herankoana@csu.fullerton.edu>
-Peter Vu <vupeter@csu.fullerton.edu>
+/**
+    CPSC 351-Summer 2017 Assignment 1
+    shell.cpp
+    Purpose: An interactive shell that takes a single command without arguements
+    and executes it.
 
-CPSC 351 - Summer 2017, Assignment 1
+    @author Daniel Bravo <bravod@csu.fullerton.edu>
+	@author Colbert Chu <colbertchu@csu.fullerton.edu>
+	@author Anthony Hernandez <herankoana@csu.fullerton.edu>
+	@author Peter Vu <vupeter@csu.fullerton.edu>
+    @version 1.0 07/26/17 
 */
 
 #include <unistd.h>
@@ -35,15 +39,17 @@ int main()
 		/* If the user wants to exit */
 		if(cmdBuff != "exit")
 		{
-			/* TODO: Create a child */
+			/* Create a child */
 			pid = fork();
 			
-			/* TODO: Error check to make sure the child was successfully created */
+			/* Error check to make sure the child was successfully created */
 			if (pid < 0) { /* error occurred */
 				fprintf(stderr, "Fork Failed\n");
 				return 1;
 			}
 			else if (pid == 0) { /* child process */
+				/* Child process replace program with specified command line
+					and error check the execlp() system call */
 				if (-1 == execlp(("/bin/" + cmdBuff).c_str(), cmdBuff.c_str(), NULL)) {
 					perror("Error");
 					return 1;
@@ -54,20 +60,6 @@ int main()
 			          wait(NULL);
 			          // printf("Child Complete\n");
 			}
-				
-			/*** TODO: If I am child, I will do this: ****/
-			/* Call execlp() to replace my program with that specified at the command line.
-			 * PLEASE NOTE: YOU CANNOT PASS cmdBuff DIRECTLY to execlp(). It is because 
-			 * cmdBuff is an object of type string (i.e., a class) and execlp() expects
- 			 * an array of characters.  However, you can pass cmdBuff.c_str(), which will
-			 * return an array of characters representation of the string object.
-			 * 
-			 * Also, please do not forget to error check your exelp() system calls.
-			 */
-			
-			
-			/*** TODO: If I am a parent, I will do the following ***/
-			/* Wait for the child process to terminate */
 		}
 	}
 	while(cmdBuff != "exit");

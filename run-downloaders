@@ -1,5 +1,15 @@
 #! /bin/bash
 
+# CPSC 351-Summer 2017 Assignment 1
+# run-shell
+# Purpose: Compile, run and time a serial and parallel downloader.
+# 
+# @author Daniel Bravo <bravod@csu.fullerton.edu>
+# @author Colbert Chu <colbertchu@csu.fullerton.edu>
+# @author Anthony Hernandez <herankoana@csu.fullerton.edu>
+# @author Peter Vu <vupeter@csu.fullerton.edu>
+# @version 1.0 07/26/17 
+
 # Clear the terminal
 clear
 
