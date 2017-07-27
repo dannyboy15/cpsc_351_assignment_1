@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # CPSC 351-Summer 2017 Assignment 1
-# run-shell
+# run-downloaders
 # Purpose: Compile and run the shell.cpp program
 # 
 # @author Daniel Bravo <bravod@csu.fullerton.edu>

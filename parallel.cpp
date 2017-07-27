@@ -1,6 +1,6 @@
 /**
     CPSC 351-Summer 2017 Assignment 1
-    serial.cpp
+    parallel.cpp
     Purpose: Downloads files from specified urls using a parallel architecture.
 
     @author Daniel Bravo <bravod@csu.fullerton.edu>
